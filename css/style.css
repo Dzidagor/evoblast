@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+hr {
+  background-color: #fff;
+}
+
 .slick-slide:active, .slick-slide:focus {
   outline: none;
 }
@@ -64,6 +68,31 @@ body {
   color: #fff;
   -webkit-transition: all 0.4s ease;
   -webkit-transition-transition: all 0.4s ease;
+}
+.navbar__links a:after {
+  content: "";
+  display: block;
+  position: relative;
+  right: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.4s;
+}
+.navbar__links a:hover {
+  color: #0094CA;
+}
+.navbar__links a:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #0094CA;
+  transition: width 0.4s;
 }
 
 .hero-slide {
