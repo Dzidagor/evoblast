@@ -10,9 +10,9 @@
   <!-- Подключение файлов стилей -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Подключение Slick-слайдера -->
-  <link rel="stylesheet" href="libs/slick/slick.css">
-  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <!-- Подключение Swiper-слайдера -->
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.css">
+
 </head>
 <body>
   <header class="header">
@@ -45,60 +45,56 @@
     </div>
   </header>
   <section class="hero">
-    <div class="hero-slider">
-      <div class="hero-slider__item hero-slide">
-        <div class="hero-slide__img">
-          <img src="img/header/slide_1.jpg" alt="slide 1">
+    <div class="hero-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="hero-slider__item hero-slide swiper-slide">
+          <img class="hero-slide__img" src="img/header/slide_1.jpg" alt="slide 1">
+          <div class="hero-slide__text">
+            <h3 class="hero-slide__title">Группа компаний «Эвобласт» обеспечивает эффективный и безопасный доступ к природным ресурсам</h3>
+            <a href="#1" class="btn hero-slide__button">Подробнее</a>
+          </div>
         </div>
-        <div class="hero-slide__text">
-          <h3 class="hero-slide__title">Группа компаний «Эвобласт» обеспечивает эффективный и безопасный доступ к природным ресурсам</h3>
-          <a href="#1" class="btn hero-slide__button">Подробнее</a>
+        <div class="hero-slider__item hero-slide swiper-slide">
+          <img class="hero-slide__img" src="img/header/slide_2.jpg" alt="slide 2">
+          <div class="hero-slide__text">
+            <h3 class="hero-slide__title">Мы работаем в 10 регионах России</h3>
+            <a href="#1" class="btn hero-slide__button">Подробнее</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-slider__item hero-slide">
-        <div class="hero-slide__img">
-          <img src="img/header/slide_2.jpg" alt="slide 2">
+        <div class="hero-slider__item hero-slide swiper-slide">
+          <img class="hero-slide__img" src="img/header/slide_3.jpg" alt="slide 3">
+          <div class="hero-slide__text">
+            <h3 class="hero-slide__title">Мы предоставляем полный цикл услуг для ведения буровзрывных работ</h3>
+            <a href="#1" class="btn hero-slide__button">Подробнее</a>
+          </div>
         </div>
-        <div class="hero-slide__text">
-          <h3 class="hero-slide__title">Группа компаний «Эвобласт» обеспечивает эффективный и безопасный доступ к природным ресурсам</h3>
-          <a href="#1" class="btn hero-slide__button">Подробнее</a>
+        <div class="hero-slider__item hero-slide swiper-slide">
+          <img class="hero-slide__img" src="img/header/slide_4.jpg" alt="slide 4">
+          <div class="hero-slide__text">
+            <h3 class="hero-slide__title">Мы имеем лучшие в России технологии для заряжания восстающих скважин</h3>
+            <a href="#1" class="btn hero-slide__button">Подробнее</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-slider__item hero-slide">
-        <div class="hero-slide__img">
-          <img src="img/header/slide_3.jpg" alt="slide 3">
-        </div>
-        <div class="hero-slide__text">
-          <h3 class="hero-slide__title">Группа компаний «Эвобласт» обеспечивает эффективный и безопасный доступ к природным ресурсам</h3>
-          <a href="#1" class="btn hero-slide__button">Подробнее</a>
-        </div>
-      </div>
-      <div class="hero-slider__item hero-slide">
-        <div class="hero-slide__img">
-          <img src="img/header/slide_4.jpg" alt="slide 4">
-        </div>
-        <div class="hero-slide__text">
-          <h3 class="hero-slide__title">Группа компаний «Эвобласт» обеспечивает эффективный и безопасный доступ к природным ресурсам</h3>
-          <a href="#1" class="btn hero-slide__button">Подробнее</a>
-        </div>
-      </div>
-      <div class="hero-slider__item hero-slide">
-        <div class="hero-slide__img">
-          <img src="img/header/slide_5.jpg" alt="slide 5">
-        </div>
-        <div class="hero-slide__text">
-          <h3 class="hero-slide__title">Группа компаний «Эвобласт» обеспечивает эффективный и безопасный доступ к природным ресурсам</h3>
-          <a href="#1" class="btn hero-slide__button">Подробнее</a>
+        <div class="hero-slider__item hero-slide swiper-slide">
+          <img class="hero-slide__img" src="img/header/slide_5.jpg" alt="slide 5">
+          <div class="hero-slide__text">
+            <h3 class="hero-slide__title">Мы делаем недоступное доступным!</h3>
+            <a href="#1" class="btn hero-slide__button">Подробнее</a>
+          </div>
         </div>
       </div>
+      <div class="hero__pagination swiper-pagination"></div>
     </div>
-    <div class="hero__pagination"></div>
-  </section>
-
+  <!-- </section>
+  <section style="background: red; height: 400px;">
+    <div class="container">
+      <span></span>
+    </div>
+  </section> -->
 
   <!-- Подключение JS -->
   <script src="libs/jquery/jquery-3.6.1.min.js"></script>
-  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

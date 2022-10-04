@@ -1,11 +1,5 @@
 $(function() {
 
-$('.hero-slider').slick({
-  infinit:false,
-  vertical:true,
-  verticalSwiping:true
-});
-
 // Fixed header
 $(window).scroll(function() {
 	if($(this).scrollTop() >= 30) {
@@ -18,3 +12,18 @@ $(window).scroll(function() {
 
 
 });
+
+var swiper = new Swiper('.hero-slider', {
+  direction: 'vertical',
+  mousewheel: true,
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1,
+    releaseOnEdges: true,
+},
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+

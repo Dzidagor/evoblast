@@ -62,50 +62,74 @@
 
 
 .search-form
+  &__form
+    position: relative
+    width: 300px
+    margin: 0 auto
+    height: 42px
+  &__input
+    height: 42px
+    width: 0
+    padding: 0 42px 0 15px
+    border: none
+    border-bottom: 2px solid transparent
+    outline: none
+    background: transparent
+    transition: .4s cubic-bezier(0, 0.8, 0, 1)
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+    &:focus
+      width: 300px
+      z-index: 1
+      border-bottom: 2px solid #F9F0DA
 
+  
 .hero
   // .hero__pagination
   &__pagination
+    left: 6%
+    color: $pagination
+.swiper-wrapper
 
 
 .hero-slider
+  position: relative
+  height: 100vh
+  width: 100%
+  overflow: hidden
   // .hero-slider__item
   &__item
 
 
 .hero-slide
-  position: relative
+  display: flex
+  justify-content: flex-start
+
+    
   // .hero-slide__img
   &__img
-    position: relative
-    & img
-      display: block
-      height: auto
-      width: 100%
+    z-index: -1
+    position: absolute
+    height: 100%
+    width: 100%
   // .hero-slide__text
   &__text
     color: $light
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 1
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
+    text-align: left
     display: flex
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-        -ms-flex-pack: center
-            justify-content: center
-    -webkit-box-align: center
-    -webkit-align-items: center
-        -ms-flex-align: center
-            align-items: center
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    max-width: 1080px
+    padding-left: 170px
+    padding-top: 240px
   // .hero-slide__title
   &__title
-
+    +intro-bold
+    font-size: 50px
+    line-height: 124%
   // .hero-slide__button
   &__button
 
