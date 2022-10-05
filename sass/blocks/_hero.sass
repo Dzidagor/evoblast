@@ -1,0 +1,52 @@
+.hero
+  // .hero__pagination
+  &__pagination
+    // pointer-events: none
+    width: 5%
+    left: 6%
+.swiper-wrapper
+.swiper-pagination-bullet
+  background: $pagination 
+  opacity: 1 
+.swiper-pagination-bullet-active
+  background: $blue 
+.hero-slider
+  position: relative
+  height: 100vh
+  width: 100%
+  overflow: hidden
+  // .hero-slider__item
+  &__item
+
+
+.hero-slide
+  display: flex
+  justify-content: flex-start
+  // .hero-slide__img
+  &__img
+    z-index: -1
+    position: absolute
+    height: 100%
+    width: 100%
+  // .hero-slide__text
+  &__text
+    color: $light
+    text-align: left
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    padding-left: 170px
+    padding-top: 240px
+  // .hero-slide__title
+  &__title
+    +intro-bold
+    font-size: 50px
+    line-height: 124%
+  // .hero-slide__button
+  &__button
+    margin-top: 24px
+
+
+
+.btn

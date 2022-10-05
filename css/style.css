@@ -47,6 +47,16 @@ hr {
   padding: 16px 36px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+.blue-btn:hover {
+  background-color: #027FAD;
+  color: #fff;
+  transition: all 0.4s ease-in;
+}
+.blue-btn:active {
+  background-color: #036184;
+  transition: all 0.1s ease;
 }
 
 .header {
@@ -142,6 +152,7 @@ hr {
 }
 
 .hero__pagination {
+  width: 5%;
   left: 6%;
 }
 
