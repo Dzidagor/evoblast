@@ -231,10 +231,26 @@ hr {
   font-weight: 400;
   font-size: 48px;
   line-height: 48px;
+  max-width: 275px;
+}
+.about-company__text {
+  max-width: 850px;
+}
+
+.about-company-text {
+  font-family: "Roboto", sans-serif;
 }
 .about-company-text__main {
   display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142%;
 }
 .about-company-text__submain {
   display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #989898;
+  margin-top: 25px;
 }/*# sourceMappingURL=style.css.map */
