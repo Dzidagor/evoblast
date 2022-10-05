@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Evoblast</title>
+  <!-- Подключение шрифта с иконками-->
+  <script src="https://kit.fontawesome.com/ae4d9eefaf.js" crossorigin="anonymous"></script>
   <!-- Подключение шрифтов -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Подключение Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Подключение Swiper-слайдера -->
@@ -40,7 +42,7 @@
           <div class="search-form">
             <form class="search-form__form" action="" method="get">
               <input class="search-form__input" name="" placeholder="Поиск по сайту" type="search">
-              <button type="submit"></button>
+              <button class="search-form__button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
           </div>
         </div>
@@ -89,12 +91,27 @@
       </div>
       <div class="hero__pagination swiper-pagination"></div>
     </div>
-  <!-- </section>
-  <section style="background: red; height: 400px;">
-    <div class="container">
-      <span></span>
-    </div>
-  </section> -->
+    <section class="about-company">
+      <div class="container">
+        <div class="about-company__block">
+          <h3 class="about-company__title">О компании</h3>
+          <div class="about-company__text about-company-text">
+            <span class="about-company-text__main">
+              Эвобласт – инновационный российский производитель коммерческих взрывчатых веществ и средств инициирования для горной и строительной промышленности
+            </span>
+            <!-- /.about-company-text__main -->
+            <span class="about-company-text__submain">
+              Наша миссия - повышение благосостояния населения Земли за счет более эффективного и рационального использования минеральных ресурсов.
+            </span>
+            <!-- /.about-company-text__submain -->
+          </div>
+          <!-- /.about-company__text -->
+        </div>
+        <!-- /.about-company__block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.about-company -->
 
   <!-- Подключение JS -->
   <script src="libs/jquery/jquery-3.6.1.min.js"></script>

@@ -26,4 +26,3 @@ var swiper = new Swiper('.hero-slider', {
     clickable: true,
   },
 });
-
