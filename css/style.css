@@ -293,4 +293,15 @@ body {
   font-size: 18px;
   line-height: 142%;
   margin-top: 20px;
+}
+
+.about-in-nums__item {
+  display: flex;
+  flex-direction: column;
+}
+.about-in-nums__title {
+  display: block;
+}
+.about-in-nums__subtitle {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
