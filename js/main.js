@@ -13,7 +13,7 @@ $(window).scroll(function() {
 
 });
 
-var swiper = new Swiper('.hero-slider', {
+var swiper_1 = new Swiper('.hero-slider', {
   direction: 'vertical',
   mousewheel: true,
   mousewheel: {
@@ -24,5 +24,12 @@ var swiper = new Swiper('.hero-slider', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+});
+
+var aboutSlider = new Swiper('.about-slider', {
+  navigation: {
+    nextEl: ".about-slider__next",
+    prevEl: ".about-slider__prev",
   },
 });

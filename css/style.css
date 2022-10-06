@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
 }
 
-hr {
+.navbar-line {
   background-color: #fff;
   opacity: 1;
 }
@@ -253,4 +253,44 @@ hr {
   line-height: 142%;
   color: #989898;
   margin-top: 25px;
+}
+
+.about {
+  background: #F5F5F5;
+}
+.about__block {
+  display: flex;
+  padding: 100px 0;
+}
+.about__text {
+  margin-right: 20px;
+}
+.about__slider {
+  max-width: 850px;
+}
+
+.about-text__title {
+  font-family: "Intro Regular";
+  font-weight: 400;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+.about-text__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142%;
+  margin-bottom: 20px;
+}
+.about-text__content {
+  color: #989898;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142%;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
