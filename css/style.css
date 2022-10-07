@@ -320,4 +320,31 @@ body {
   line-height: 124%;
   text-align: center;
   color: #989898;
+  text-transform: uppercase;
+}
+
+.products {
+  background-color: #F5F5F5;
+}
+.products__block {
+  padding: 100px 0;
+}
+.products__title {
+  font-family: "Intro Regular";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+.products__item {
+  position: relative;
+}
+
+.product-item__img {
+  z-index: -1;
+}
+.product-item__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
