@@ -15,19 +15,35 @@
 
 
 .product-item
+  +bw-image
+  -webkit-transition: all 0.4s ease
+          transition: all 0.4s ease
   // .product-item__img
+  &:hover
+    +dis-bm-image
+    -webkit-transition: all 0.4s ease
+          transition: all 0.4s ease
   &__img
     z-index: -1
   // .product-item__text
   &__text
+    display: flex
+    justify-content: space-between
     position: absolute
-    left: 0
-    bottom: 0
+    left: 32px
+    right: 32px
+    bottom: 20px
+    color: $light
 
     
 
   // .product-item__title
   &__title
-
+    +intro-regular
+    font-size: 16px
+    line-height: 142%
+    max-width: 215px
   // .product-item__number
   &__number
+    display: flex
+    align-items: flex-end
