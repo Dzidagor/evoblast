@@ -1,18 +1,31 @@
 .about-in-nums
+  // .about-in-nums__block
+  &__block
+    padding-top: 100px
+    display: flex
+    justify-content: space-between
+  // .about-in-nums__col
+  &__col
   // .about-in-nums__item
   &__item
-    display: flex
-    flex-direction: column
+    margin-bottom: 100px
   // .about-in-nums__title
   &__title
-    display: block
-
+    +intro-regular
+    font-size: 100px
+    line-height: 100px
+    text-align: center
+    color: $blue
+    margin-bottom: 24px
   // .about-in-nums__subtitle
   &__subtitle
-    display: block
-
-
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 124%
+    text-align: center
+    color: $grey-text
 .container
 
-.row
 

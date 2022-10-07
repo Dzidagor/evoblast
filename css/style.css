@@ -295,13 +295,29 @@ body {
   margin-top: 20px;
 }
 
-.about-in-nums__item {
+.about-in-nums__block {
+  padding-top: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.about-in-nums__item {
+  margin-bottom: 100px;
 }
 .about-in-nums__title {
-  display: block;
+  font-family: "Intro Regular";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #0094CA;
+  margin-bottom: 24px;
 }
 .about-in-nums__subtitle {
-  display: block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  text-align: center;
+  color: #989898;
 }/*# sourceMappingURL=style.css.map */
