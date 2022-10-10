@@ -1,0 +1,92 @@
+.career
+  padding-top: 100px
+.career-block
+  // .career-block__title-block
+  &__title-block
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+  // .career-block__title
+  &__title
+    +intro-regular
+    font-size: 48px
+    line-height: 48px
+  // .career-block__subtitle-block
+  &__subtitle-block
+    max-width: 850px
+    font-family: 'Roboto', sans-serif
+  // .career-block__subtitle
+  &__subtitle
+    display: inline-block
+    font-weight: 500
+    font-size: 24px
+    line-height: 142%
+    margin-bottom: 24px
+  // .career-block__text
+  &__text
+    font-weight: 400
+    font-size: 20px
+    line-height: 142%
+    color: $grey-text
+  // .career-block__accord-block
+  &__accord-block
+
+.accord-block
+  // .accord-block__item
+  &__item
+    &[open] .accord-item__arrow
+      transform: scale(1,-1) translateY(50%)
+
+.accord-item
+  // .accord-item__block
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+  // .accord-item__title-block
+  &__title-block
+
+  // .accord-item__summary
+  &__summary
+    display: block
+    font-family: 'Roboto'
+    &:hover
+      background-color: $blue
+      color: $light
+      .accord-item__subtitle
+        color: $light
+      .accord-item__arrow
+        fill: $light
+        
+  // .accord-item__subtitle
+  &__subtitle
+    font-weight: 400
+    font-size: 20px
+    line-height: 142%
+    color: $grey-text
+    margin-bottom: 24px
+  // .accord-item__title
+  &__title
+    font-weight: 500
+    font-size: 28px
+    line-height: 142%
+  // .accord-item__list-title
+  &__list-title
+
+  // .accord-item__button
+  &__button
+  // .accord-item__arrow
+  &__arrow
+    width: 34px
+    height: 34px
+    fill: $grey-text
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.btn
+
+.light-btn
+

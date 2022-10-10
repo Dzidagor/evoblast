@@ -21,6 +21,31 @@ body {
   overflow-x: hidden;
 }
 
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary {
+  display: inline-block;
+  padding: 0.3em 0.5em 0.3em 0.4em;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
 .navbar-line {
   background-color: #fff;
   opacity: 1;
@@ -380,4 +405,82 @@ body {
 .product-item__number {
   display: flex;
   align-items: flex-end;
+}
+
+.career {
+  padding-top: 100px;
+}
+
+.career-block__title-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.career-block__title {
+  font-family: "Intro Regular";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+.career-block__subtitle-block {
+  max-width: 850px;
+  font-family: "Roboto", sans-serif;
+}
+.career-block__subtitle {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142%;
+  margin-bottom: 24px;
+}
+.career-block__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #989898;
+}
+.accord-block__item[open] .accord-item__arrow {
+  transform: scale(1, -1) translateY(50%);
+}
+
+.accord-item__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.accord-item__summary {
+  display: block;
+  font-family: "Roboto";
+}
+.accord-item__summary:hover {
+  background-color: #0094CA;
+  color: #fff;
+}
+.accord-item__summary:hover .accord-item__subtitle {
+  color: #fff;
+}
+.accord-item__summary:hover .accord-item__arrow {
+  fill: #fff;
+}
+.accord-item__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #989898;
+  margin-bottom: 24px;
+}
+.accord-item__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 142%;
+}
+.accord-item__arrow {
+  width: 34px;
+  height: 34px;
+  fill: #989898;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */
