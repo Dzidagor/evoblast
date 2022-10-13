@@ -34,8 +34,28 @@
 .accord-block
   // .accord-block__item
   &__item
-    &[open] .accord-item__arrow
-      transform: scale(1,-1) translateY(50%)
+    background-color: $blue
+    &[open]
+      summary ~ *
+        animation: sweep .5s ease-in-out
+      .accord-item
+        &__arrow
+          transform: scale(1,-1) translateY(50%)
+          transition: transform .5s
+          fill: $light
+        &__summary
+          background-color: $blue
+          color: $light
+        &__subtitle
+          color: $light
+        &__block
+          border-bottom: 2px solid $blue
+      
+@keyframes sweep 
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 .accord-item
   // .accord-item__block
@@ -45,38 +65,67 @@
     align-items: center
     position: relative
     width: 100%
+    border-bottom: 2px solid #D8D8D8
+
   // .accord-item__title-block
   &__title-block
-
+    margin-bottom: 33px
+  &__container
+    padding-bottom: 28px
   // .accord-item__summary
   &__summary
+    padding: 0
     display: block
     font-family: 'Roboto'
+    background-color: $light
+    transition: all 0.5s ease-out
+    padding: 28px 0
     &:hover
       background-color: $blue
       color: $light
-      .accord-item__subtitle
-        color: $light
-      .accord-item__arrow
-        fill: $light
-        
+      transition: all 0.5s ease-out
+      .accord-item
+        &__subtitle
+          color: $light
+          transition: all 0.5s ease-out
+        &__arrow
+          fill: $light
+        &__block
+          transition: all 0.5s ease-out
+          border-bottom: 2px solid $blue
+  &__list-title
+    display: inline-block
+    color: $light
+    margin-top: 40px
+    margin-bottom: 24px
+    font-family: 'Roboto'
+    font-weight: 500
+    font-size: 24px
+    line-height: 142%
+    
   // .accord-item__subtitle
   &__subtitle
+    display: block
     font-weight: 400
     font-size: 20px
     line-height: 142%
     color: $grey-text
     margin-bottom: 24px
+    transition: all 0.5s ease-out
   // .accord-item__title
   &__title
     font-weight: 500
     font-size: 28px
     line-height: 142%
+    margin-bottom: 0
+    transition: all 0.5s ease-out
   // .accord-item__list-title
   &__list-title
-
   // .accord-item__button
   &__button
+    width: 179px
+    height: 48px
+    margin-top: 40px
   // .accord-item__arrow
   &__arrow
     width: 34px
@@ -86,8 +135,26 @@
     right: 0
     top: 50%
     transform: translateY(-50%)
+    transition: transform .5s
 
-.btn
 
-.light-btn
-
+.career-list
+  list-style: none
+  color: rgba(255, 255, 255, 0.7)
+  padding: 0
+  &__item
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 18px
+    line-height: 142%
+    margin-bottom: 14px
+    display: block
+  &__item:before
+    color: $light
+    content: url(../img/icons/line.png)
+    position: relative
+    width: 17px
+    height: 26px
+    display: inline-block
+    margin-right: 14px
+    bottom: 6px
