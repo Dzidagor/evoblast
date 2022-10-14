@@ -1,0 +1,95 @@
+.work-form
+  background-color: $light-bg
+  padding: 100px 0
+  // .work-form__cotainer
+  &__cotainer
+    display: flex
+    justify-content: space-between
+  // .work-form__title-block
+  &__title-block
+
+  // .work-form__title
+  &__title
+    +intro-regular
+    font-size: 48px
+    line-height: 48px
+    margin-bottom: 40px
+
+  // .work-form__subtitle
+  &__subtitle
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 24px
+    line-height: 132%
+    color: $grey-text
+    a
+      text-decoration: none
+      color: $blue
+  // .work-form__form
+  &__form
+    width: 66%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  // .work-form__input-name
+  &__input
+    position: relative
+    margin-bottom: 45px
+    // width: 48%
+    input
+      display: block
+      width: 414px
+      font-size: 14pt
+      padding: 10px
+      border: none
+      border-bottom: 2px solid rgba(188, 188, 188, 0.51)
+      background-color: $light-bg
+    input:focus
+      outline: none
+    label 
+      position: absolute
+      top: 10px
+      left: 5px
+      font-family: 'Roboto'
+      font-weight: 400
+      font-size: 18px
+      line-height: 142%
+      pointer-events: none
+      transition: all 0.2s ease
+    input:focus ~ label, input:valid ~ label 
+      top: -20px
+      font-size: 12px
+      line-height: 142%
+      color: $grey-text
+    input:focus ~ .bar:before, input:focus ~ .bar:after 
+      width: 50%
+
+  // .work-form__text-area
+  &__text-area
+    width: 100%
+    border: 2px solid rgba(188, 188, 188, 0.51)
+    border-radius: 5px
+    padding: 20px
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 18px
+    line-height: 142%
+    color: $grey-text
+  &__text-area:focus
+    outline: none
+    border: 2px solid rgba(188, 188, 188, 0.51)
+    color: #000000
+  
+  // .work-form__input-acception
+  &__input-acception
+    width: 100%
+    margin: 35px 0
+    label
+      font-family: 'Roboto'
+      font-weight: 400
+      font-size: 18px
+      line-height: 142%
+  // .work-form__button
+  &__button
+
+

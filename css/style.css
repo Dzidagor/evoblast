@@ -462,6 +462,10 @@ summary {
   line-height: 142%;
   color: #989898;
 }
+.career-block__accord-block {
+  padding-bottom: 100px;
+}
+
 .accord-block__item {
   background-color: #0094CA;
 }
@@ -604,4 +608,99 @@ summary {
   display: inline-block;
   margin-right: 14px;
   bottom: 6px;
+}
+
+.work-form {
+  background-color: #F5F5F5;
+  padding: 100px 0;
+}
+.work-form__cotainer {
+  display: flex;
+  justify-content: space-between;
+}
+.work-form__title {
+  font-family: "Intro Regular";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+.work-form__subtitle {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 132%;
+  color: #989898;
+}
+.work-form__subtitle a {
+  text-decoration: none;
+  color: #0094CA;
+}
+.work-form__form {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.work-form__input {
+  position: relative;
+  margin-bottom: 45px;
+}
+.work-form__input input {
+  display: block;
+  width: 414px;
+  font-size: 14pt;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(188, 188, 188, 0.51);
+  background-color: #F5F5F5;
+}
+.work-form__input input:focus {
+  outline: none;
+}
+.work-form__input label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142%;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.work-form__input input:focus ~ label, .work-form__input input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  line-height: 142%;
+  color: #989898;
+}
+.work-form__input input:focus ~ .bar:before, .work-form__input input:focus ~ .bar:after {
+  width: 50%;
+}
+.work-form__text-area {
+  width: 100%;
+  border: 2px solid rgba(188, 188, 188, 0.51);
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142%;
+  color: #989898;
+}
+.work-form__text-area:focus {
+  outline: none;
+  border: 2px solid rgba(188, 188, 188, 0.51);
+  color: #000000;
+}
+.work-form__input-acception {
+  width: 100%;
+  margin: 35px 0;
+}
+.work-form__input-acception label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142%;
 }/*# sourceMappingURL=style.css.map */

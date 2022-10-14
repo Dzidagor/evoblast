@@ -33,3 +33,5 @@ var aboutSlider = new Swiper('.about-slider', {
     prevEl: ".about-slider__prev",
   },
 });
+
+
