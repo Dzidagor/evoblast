@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 svg path {
   stroke: inherit;
   stroke-width: inherit;
@@ -44,11 +48,6 @@ summary {
   padding: 0.3em 0.5em 0.3em 0.4em;
   font-size: 1.4em;
   cursor: pointer;
-}
-
-.navbar-line {
-  background-color: #fff;
-  opacity: 1;
 }
 
 .slick-slide:active, .slick-slide:focus {
@@ -172,6 +171,13 @@ summary {
   background-color: #0094CA;
   transition: width 0.4s;
 }
+.navbar__burger-icon {
+  display: none;
+}
+.navbar__line {
+  background-color: #fff;
+  opacity: 1;
+}
 
 .search-form {
   display: flex;
@@ -216,6 +222,53 @@ summary {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .navbar__burger-icon {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: block;
+  }
+  .navbar__burger-icon span, .navbar__burger-icon:before, .navbar__burger-icon:after {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  .navbar__burger-icon span {
+    top: 16px;
+  }
+  .navbar__burger-icon:after, .navbar__burger-icon:before {
+    content: "";
+  }
+  .navbar__burger-icon:after {
+    bottom: 5px;
+  }
+  .navbar__burger-icon:before {
+    top: 5px;
+  }
+  .navbar__burger-icon.open-menu span {
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .navbar__burger-icon.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+  }
+  .navbar__burger-icon.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+  }
+  .navbar__line {
+    display: none;
+  }
+  .search-form {
+    display: none;
+  }
+}
 .hero__pagination {
   width: 5%;
   left: 6%;

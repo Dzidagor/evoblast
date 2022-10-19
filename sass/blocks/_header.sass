@@ -22,6 +22,7 @@
   align-content: center
   // .navbar__logo
   &__logo
+  // .navbar__links
   &__links
     margin: 0
     padding: 0
@@ -58,8 +59,11 @@
       height: 2px
       background-color: $blue
       transition: width 0.4s
-
-
+  &__burger-icon
+    display: none
+  &__line
+    background-color: $light
+    opacity: 1
 
 .search-form
   display: flex
@@ -98,5 +102,81 @@
       font-size: 16px
       cursor: pointer
 
-      
+@media (max-width: 767px)
+  .header
+    // .header__block
+    &__block
+
+  .container
+
+  .navbar
+    // .navbar__logo
+    &__logo
+
+    // .navbar__links
+    // &__links
+    //   display: block
+    //   position: absolute
+    //   background: $blue
+    //   top: 0
+    //   height: 100vh
+    //   width: 100vw
+    //   right: -200%
+    //   left: auto
+    //   transition: all 0.4s ease
+    //   &.open-menu
+    //     top: 0
+    //     right: auto
+    //     left: auto
+    //     transition: all 0.4s ease
+
+    // .navbar__burger-icon
+    &__burger-icon
+      position: relative
+      width: 40px
+      height: 35px
+      display: block
+      span, &:before, &:after
+        height: 3px
+        width: 100%
+        position: absolute
+        margin: 0 auto
+        background-color: $light
+      span
+        top: 16px
+      &:after, &:before
+        content: ''
+      &:after
+        bottom: 5px
+      &:before
+        top: 5px
+      &.open-menu span
+        opacity:0
+        transition: 0.2s
+      &.open-menu:before
+        transform: rotate(38deg)
+        top: 16px
+        transition: 0.4s
+      &.open-menu:after
+        transform: rotate(-38deg)
+        bottom: 16px
+        transition: 0.4s
+
+    &__line
+      display: none
+
+
+  .search-form
+    display: none
+    // .search-form__form
+    &__form
+
+    // .search-form__input
+    &__input
+
+    // .search-form__button
+    &__button
+
+
+
 

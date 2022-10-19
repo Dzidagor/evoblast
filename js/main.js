@@ -34,4 +34,11 @@ var aboutSlider = new Swiper('.about-slider', {
   },
 });
 
+$(document).ready(function() {
+  $('.navbar__burger-icon').click(function() {
+      $('.navbar__burger-icon').toggleClass('open-menu');
+      $('.navbar__links').toggleClass('open-menu');
+  });
+});
+
 
